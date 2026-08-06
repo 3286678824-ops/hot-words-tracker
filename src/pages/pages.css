@@ -1,0 +1,67 @@
+.page-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.section-title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+/* Dashboard */
+.dashboard__summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 641px) {
+  .dashboard__summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+.dashboard__section {
+  margin-bottom: var(--space-lg);
+}
+
+.dashboard__empty {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--color-text-muted);
+}
+.dashboard__empty-hint {
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-sm);
+}
+
+/* AddWord */
+.add-word-page__no-cat {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--color-text-muted);
+}
+.add-word-page__hint {
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-sm);
+}
+
+/* History */
+.history-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Categories */
+.categories-page__header {
+  margin-bottom: var(--space-md);
+}
