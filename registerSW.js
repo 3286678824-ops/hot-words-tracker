@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/hot-words-tracker/sw.js', { scope: '/hot-words-tracker/' })})}
